@@ -24,6 +24,7 @@ def update_counting_hash(hash, key)
       return_hash[key] = return_hash[key] + 1
       return return_hash
     else
+      puts "OUTPUTOUTPUTOIUSTOIUEOITU"
       return_hash[key] = 1
       binding.pry
       return return_hash
