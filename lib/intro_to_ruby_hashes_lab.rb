@@ -21,9 +21,11 @@ def update_counting_hash(hash, key)
   count = 0
   while count < return_hash.length do
     if return_hash.key?(key)
-      return return_hash[key] += 1
+      return_hash[key] = return_hash[key] + 1
+      return return_hash
     elsif
-      return return_hash[key] = 1
+      return_hash[key] = 1
+      return return_hash
     end
 
     count += 1
