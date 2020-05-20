@@ -20,11 +20,12 @@ def update_counting_hash(hash, key)
   return_hash = hash
   count = 0
   while count < return_hash.length do
+    
     if return_hash.key?(key)
       return_hash[key] = return_hash[key] + 1
       return return_hash
-    else
-      puts "OUTPUTOUTPUTOIUSTOIUEOITU"
+    elsif (!return_hash.key?(key))
+      
       return_hash[key] = 1
       binding.pry
       return return_hash
