@@ -22,7 +22,6 @@ def update_counting_hash(hash, key)
   while count < return_hash.length do
     if return_hash.key?(key)
       return_hash[key] += 1
-      binding.pry
     elsif
       return_hash[key] = 1
     end
