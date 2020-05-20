@@ -19,7 +19,7 @@ def update_counting_hash(hash, key)
   return_hash = {}
   return_hash = hash
   count = 0
-  while count =< return_hash.length do
+  while count <= return_hash.length do
     
     if return_hash.key?(key)
       return_hash[key] = return_hash[key] + 1
