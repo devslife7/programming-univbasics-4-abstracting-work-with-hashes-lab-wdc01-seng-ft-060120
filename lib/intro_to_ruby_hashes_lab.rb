@@ -23,9 +23,8 @@ def update_counting_hash(hash, key)
     if return_hash.key?(key)
       return_hash[key] = return_hash[key] + 1
       return return_hash
-    elsif
+    else
       return_hash[key] = 1
-      binding.pry
       return return_hash
     end
 
