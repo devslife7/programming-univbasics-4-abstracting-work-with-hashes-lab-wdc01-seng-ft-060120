@@ -26,7 +26,6 @@ def update_counting_hash(hash, key)
       count = return_hash.length
     else
       return_hash[key] = 1
-      binding.pry
     end
 
     count += 1
